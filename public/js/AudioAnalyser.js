@@ -6,6 +6,7 @@ export default class {
     let {audioLoader, sound} = this.createListener(camera);
     this.loadSource(source, audioLoader, sound);
     this.analyser = this.createAnalyser(sound);
+    this.sound = sound;
   }
 
   createListener(camera) {
@@ -27,6 +28,14 @@ export default class {
     	sound.setVolume(0.5);
     	sound.play();
     });
+  }
+
+  playAudio(sound) {
+    this.sound.play();
+  }
+
+  pauseAudio(sound) {
+    this.sound.pause();
   }
 
   createAnalyser(sound) {

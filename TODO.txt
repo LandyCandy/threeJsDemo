@@ -1,0 +1,7 @@
+TODO
+
+--DONE: add React for component management
+--DONE: play/pause button
+--DONE: audio loader button
+--textures/meshes
+--mess with them (lamberts), updates to a lambertian mesh could be cool way to express tempo change

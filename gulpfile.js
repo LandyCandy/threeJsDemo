@@ -13,8 +13,9 @@ function compile(watch) {
     var bundler = watchify(browserify('./public/js/index.js', {
         // debug: true
     }).transform(babel, {
-        presets: ["es2015"],
-        only: "/public/js/*"
+        presets: ['es2015'],
+        plugins: ['transform-react-jsx'],
+        only: '/public/js/*'
     }));
 
     function rebundle() {
