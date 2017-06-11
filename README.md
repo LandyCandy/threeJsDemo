@@ -1,2 +1,1 @@
-Hello World
-This shit is real
+Small Project to learn and play with threeJs
